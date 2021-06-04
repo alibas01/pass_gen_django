@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="{%  static  'css/style.css'  %}" />
+    <title>Linguist</title>
+  </head>
+  <body>
+    <!-- Top nav bar (fixed) -->
+    <nav>
+      <span>Password Generator</span>
+      <!-- <div id="compose">
+        <button id="compose" type="button">Compose <br />new tweet</button>
+      </div> -->
+    </nav>
+    <section class="horizantal">
+      <header class="profile">
+        <br />
+        <div></div>
+      </header>
+      {{author}}
+
+      <!-- Page-specific (main) content here -->
+      <form id="tweet-form">
+        <label class="pretext" for="tweet-text"
+          >Please fill the form for your password</label
+        >
+        <textarea name="text" id="tweet-text"></textarea>
+        <div class="sub-new-tweet">
+          <button type="submit" method="POST" action="/tweets/">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
