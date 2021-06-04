@@ -6,6 +6,10 @@ from django.http import HttpResponse
 def home(request):
     return render(request, 'home.html', {'author': 'Ali Bas'})
 
+def password(request):
+    passthe="The password"
+    return render(request, 'pass.html', {'password': passthe})
+
 
 
 

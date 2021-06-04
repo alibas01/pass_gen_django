@@ -3,33 +3,53 @@
   <head>
     {% load static %}
     <link rel="stylesheet" href="{%  static  'css/style.css'  %}" />
-    <title>Linguist</title>
+    <title>Django Generator</title>
   </head>
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>Password Generator</span>
-      <!-- <div id="compose">
-        <button id="compose" type="button">Compose <br />new tweet</button>
-      </div> -->
     </nav>
     <section class="horizantal">
       <header class="profile">
+        This app is produced by
         <br />
-        <div></div>
+        <div><strong>{{author}}</strong></div>
+        <br />
+        Powered by Django @3.2.4
       </header>
-      {{author}}
 
       <!-- Page-specific (main) content here -->
-      <form id="tweet-form">
-        <label class="pretext" for="tweet-text"
-          >Please fill the form for your password</label
-        >
-        <textarea name="text" id="tweet-text"></textarea>
-        <div class="sub-new-tweet">
-          <button type="submit" method="POST" action="/tweets/">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
+      <label>Options</label>
+      <form id="optform" action="{% url 'output' %}">
+        <select name="length">
+          <option value="5">5 character</option>
+          <option value="6">6 character</option>
+          <option value="7">7 character</option>
+          <option value="8">8 character</option>
+          <option value="9" selected="selected">9 character</option>
+          <option value="10">10 character</option>
+          <option value="11">11 character</option>
+          <option value="12">12 character</option>
+          <option value="13">13 character</option>
+          <option value="14">14 character</option>
+          <option value="15">15 character</option>
+          <option value="16">16 character</option>
+          <option value="17">17 character</option>
+          <option value="18">18 character</option>
+        </select>
+        <br />
+        <input type="checkbox" value="Uppercase" /> Uppercase
+        <br />
+        <input type="checkbox" value="Uppercase" /> Numbers
+        <br />
+        <input type="checkbox" value="Uppercase" /> Special Characters
+        <br />
+        <input value="Generate Password" type="submit" />
+        <br />
+
+        <!-- <button type="submit" method="POST" action="/pass/">Generate Pass</button> -->
+        <!-- <output name="summary" class="counter" for="tweet-text">140</output> -->
       </form>
     </section>
   </body>

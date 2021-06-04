@@ -19,5 +19,6 @@ from pass_gen import views
 urlpatterns = [
     #path('pass/', admin.site.urls),
     path('', views.home),
+    path('pass/', views.password, name='output'),
     path('author/', views.author),
 ]
