@@ -9,15 +9,34 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>Password Generator</span>
-      <a href={% url 'home' %}>HOME</a>
+      <div class='link'>
+        <!-- <a class='button button-home' href={% url 'home' %}>HOME</a> -->
+        <a class='button' href={% url 'home' %}>HOME</a>
+      </div>
     </nav>
-    <section class="horizantal">
       <header class="profile">
-        This app is produced by
-        <br />
-        <div><strong>{{author}}</strong></div>
-        Powered by Django @3.2.4
+        <div>
+          This app is produced by
+          <strong>{{author}}</strong>
+        </div>
+        <div>
+          Powered by Django @3.2.4  
+        </div>
       </header>
-    </section>
+    <div> 
+      <p>
+        Hey! 
+        My name is Ali. 
+        <br >
+        I like coding,
+            which is what I do
+            in Toronto, ON. 
+            <br >
+            This is my first Django project. 
+            <br >
+            Please check my portfolio in 
+            <a target="_blank" rel="noopener noreferrer" href='http://www.alibas.ca'>www.alibas.ca</a>
+      </p>
+    </div>
   </body>
 </html>

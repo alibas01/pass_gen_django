@@ -9,19 +9,21 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>Password Generator</span>
-      <a href={% url 'home' %}>HOME</a>
-      <a href={% url 'about' %}>ABOUT</a>
+      <div class='link'>
+        <a class='button button-home' href={% url 'home' %}>HOME</a>
+        <a class='button' href={% url 'about' %}>ABOUT</a>
+      </div>
     </nav>
     <section class="horizantal">
-      <header class="profile">
+      <!-- <header class="profile">
         This app is produced by
         <br />
         <div><strong>{{author}}</strong></div>
         Powered by Django @3.2.4
-      </header>
+      </header> -->
 
       <h1>Your Password is:</h1>
-      <output>{{password}}</output>
+      <output><p>{{password}}</p></output>
     </section>
   </body>
 </html>
