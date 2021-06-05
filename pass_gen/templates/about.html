@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{%  static  'css/style.css'  %}" />
+    <title>Django Generator</title>
+  </head>
+  <body>
+    <!-- Top nav bar (fixed) -->
+    <nav>
+      <span>Password Generator</span>
+      <a href={% url 'home' %}>HOME</a>
+    </nav>
+    <section class="horizantal">
+      <header class="profile">
+        This app is produced by
+        <br />
+        <div><strong>{{author}}</strong></div>
+        Powered by Django @3.2.4
+      </header>
+    </section>
+  </body>
+</html>
