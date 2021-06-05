@@ -9,13 +9,14 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>Password Generator</span>
+      <a href={% url 'home' %}>HOME</a>
+      <a href={% url 'about' %}>ABOUT</a>
     </nav>
     <section class="horizantal">
       <header class="profile">
         This app is produced by
         <br />
         <div><strong>{{author}}</strong></div>
-        <br />
         Powered by Django @3.2.4
       </header>
 

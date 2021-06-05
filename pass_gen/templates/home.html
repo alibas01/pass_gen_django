@@ -9,13 +9,13 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>Password Generator</span>
+      <a href={% url 'about' %}>ABOUT</a>
     </nav>
     <section class="horizantal">
       <header class="profile">
         This app is produced by
         <br />
         <div><strong>{{author}}</strong></div>
-        <br />
         Powered by Django @3.2.4
       </header>
 
@@ -44,6 +44,8 @@
         <input type="checkbox" name="numbers" /> Numbers
         <br />
         <input type="checkbox" name="special" /> Special Characters
+        <br />
+        <input type="checkbox" name="start" /> Start with a Letter
         <br />
         <input value="Generate Password" type="submit" />
         <br />
