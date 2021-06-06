@@ -29,4 +29,4 @@ Depending on your Python and pip version you will use pip3 or pip / python3 or p
 ### Start the app
 
 - `python3 manage.py runserver`
-- visit 127.0.0.1:8000 or localhost:8000 from your browser.
+- visit `127.0.0.1:8000` or `localhost:8000` from your browser.
