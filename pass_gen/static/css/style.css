@@ -80,7 +80,7 @@ output h3 {
   color: whitesmoke;
   font-size: x-large;
   font-weight: 600;
-  font-family: fantasy;
+  font-family: "Electrolize", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
