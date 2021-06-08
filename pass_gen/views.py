@@ -76,7 +76,7 @@ def password(request):
     else:
         passthe=mix(reference)
 
-    return render(request, 'pass.html', {'password': passthe, 'author': 'Ali Bas'})
+    return render(request, 'pass.html', {'password': passthe, 'author': 'Ali Bas', 'reference':reference})
 
 def about(request):
     return render(request, 'about.html', {'author': 'Ali Bas'})

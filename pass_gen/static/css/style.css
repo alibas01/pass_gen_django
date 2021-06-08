@@ -86,6 +86,16 @@ output h3 {
   align-items: center;
 }
 
+h6 {
+  color: pink;
+  font-size: large;
+  font-weight: 350;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   display: flex;
   justify-content: center;
